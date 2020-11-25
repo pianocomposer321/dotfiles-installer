@@ -1,8 +1,9 @@
 #!/bin/bash
 
-function config {
-    /usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME
-}
+# function config {
+#     /usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME
+# }
+alias config="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
 echo ".dotfiles" >> .gitignore
 git clone --bare https://github.com/pianocomposer321/dotfiles-installer
